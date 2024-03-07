@@ -1,0 +1,48 @@
+// colors
+:root {
+  // base
+
+  --font-family: "Inter", sans-serif;
+  --second-family: "Poppins", sans-serif;
+  --third-family: "Space Grotesk", sans-serif;
+  --content-width: 1125px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  --content-fluid-width: 1320px;
+  --container-fluid-width: calc(
+    var(--content-fluid-width) + (var(--container-offset) * 2)
+  );
+
+  // colors - alles
+  // --white: #fff;
+  // --black: #000;
+  // --dark: #252526;
+  // --orange-color: #ffa501;
+  // --accent: #ac182c;
+  // --blue-light: #1e6bfc;
+  // --blue: #0039a6;
+  // --fiolet: #5b4282;
+  // --grey: rgb(210, 210, 210);
+
+  //color of maket
+  --blue: #377dff;
+	--green: #38cb89;
+	--yellow: #ffab00;
+	--red: #ff5630;
+	--brand-color: #000;
+
+  //
+  --radial-bg: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+
+  --linear-bg: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(255, 255, 255, 0) 99.99%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}

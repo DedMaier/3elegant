@@ -1,0 +1,104 @@
+.card {
+  max-width: 262px;
+
+  &:hover {
+    .card__btn,
+    .card__like {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  &__picture {
+    position: relative;
+    margin-bottom: 12px;
+  }
+
+  &__new {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 4px 14px;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+
+    color: rgb(18, 18, 18);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 6px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.12);
+    background: rgb(255, 255, 255);
+
+    transform: translateY(-50%);
+    opacity: 0;
+
+    transition: all 0.4s ease-in-out;
+
+    svg {
+      fill: #6c7275;
+    }
+
+    &:hover {
+      background: #cc2e2e;
+
+      svg {
+        fill: rgb(255, 255, 255);
+      }
+    }
+  }
+
+  &__btn {
+    max-width: 230px;
+    padding: 8px 0;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 4px;
+  }
+
+  &__title {
+    color: rgb(20, 23, 24);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 4px;
+  }
+
+  &__price {
+    color: rgb(18, 18, 18);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+  }
+}

@@ -1,0 +1,97 @@
+@include('./header-mobile-nav.html')
+
+<header class="header" id="home">
+
+  <div class="header-top">
+    <div class="container header-top__container">
+      <img loading="lazy" src="./img/icon/ticket.svg" class="image" width="24" height="24" alt="">
+      <p>30% off storewide — Limited time!</p>
+      <a href="#" class="header-top__link">
+        Shop Now
+        <img loading="lazy" src="./img/icon/arrow-right.svg" class="image" width="24" height="24" alt="">
+      </a>
+    </div>
+
+    <button class="header-top__close" id="close-header-top">
+      <svg class="">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container header-bottom__container">
+      <div class="header-bottom__block">
+        <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+          <span class="burger__line"></span>
+        </button>
+        <a href="#" class="header-bottom__logo">
+          <img loading="lazy" src="./img/icon/logo.svg" class="header-bottom__image" width="105" height="24" alt="Logo">
+        </a>
+      </div>
+
+      <nav class="nav" title="Main navigation" data-menu>
+        <ul class="list-reset nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link ">
+              Home
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#shop" class="nav__link ">
+            <button class="nav__btn">
+              Shop
+              <img loading="lazy" src="./img/icon/down.svg" class="image" width="11" height="6" alt="">
+            </button>
+          </a>
+          </li>
+          <li class="nav__item">
+            <a href="#best" class="nav__link ">
+            <button class="nav__btn">
+              Product
+              <img loading="lazy" src="./img/icon/down.svg" class="image" width="11" height="6" alt="">
+            </button>
+          </a>
+          </li>
+          <li class="nav__item"><a href="#contact" class="nav__link">
+              Contact Us
+            </a></li>
+        </ul>
+      </nav>
+
+      <div class="header-bottom__right">
+        <div class="header-bottom__info ">
+          <button class="header-bottom__search">
+            <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.5 18.5L22 22M21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21C16.7467 21 21 16.7467 21 11.5Z"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button class="header-bottom__person">
+            <svg width="22" height="22" viewBox="0 0 22 22" stroke="currentColor" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.5588 18.5488C16.5654 15.8918 14.0036 14 11 14C7.99638 14 5.4346 15.8918 4.44117 18.5488M17.5588 18.5488C19.6672 16.7154 21 14.0134 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 14.0134 2.33285 16.7154 4.44117 18.5488M17.5588 18.5488C15.8031 20.0756 13.5095 21 11 21C8.49052 21 6.19694 20.0756 4.44117 18.5488M14 8C14 9.65685 12.6569 11 11 11C9.34315 11 8 9.65685 8 8C8 6.34315 9.34315 5 11 5C12.6569 5 14 6.34315 14 8Z"
+                stroke-width="1.5" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <a href="/basket.html" class="basket cart-btn">
+          <div class="basket__inner header-bottom__cart">
+            <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 6L9 7C9 8.65685 10.3431 10 12 10C13.6569 10 15 8.65685 15 7V6" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M15.6116 3H8.3886C6.43325 3 4.76449 4.41365 4.44303 6.3424L2.77636 16.3424C2.37001 18.7805 4.25018 21 6.72194 21H17.2783C19.75 21 21.6302 18.7805 21.2238 16.3424L19.5572 6.3424C19.2357 4.41365 17.5669 3 15.6116 3Z"
+                stroke-width="1.5" stroke-linejoin="round" />
+            </svg>
+            <span class="basket__count cart-btn__count header-bottom__cart-count">0</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</header>

@@ -1,0 +1,23 @@
+.arrivals {
+  padding: 48px 0;
+  background: rgb(255, 255, 255);
+  position: relative;
+
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    padding-right: 10px;
+  }
+
+}
+
+.swiper-slide {
+	width: 262px !important;
+
+	@include mobile {
+		width: 231px !important;
+	}
+}

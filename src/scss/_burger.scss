@@ -1,0 +1,36 @@
+.burger {
+
+  @include burger;
+
+  display: none;
+  z-index: 15;
+  top: 5px;
+
+  --burger-height: 12px;
+  --burger-width: 20px;
+
+  @include mobile {
+    display: block;
+  }
+
+  color: #000;
+  transition: all 0.35s ease-in-out;
+
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: #000;
+  }
+
+  &:active {
+    color: #e00e00;
+  }
+
+  &:focus-visible {
+    outline: 1px solid #000;
+    outline-offset: 3px;
+  }
+}

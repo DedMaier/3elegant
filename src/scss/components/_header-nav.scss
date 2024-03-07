@@ -1,0 +1,57 @@
+.nav {
+
+  @include mobile {
+     display: none;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+
+    @include small-tablet {
+      gap: 14px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: rgb(20, 23, 24);
+  }
+
+  &__link {
+    position: relative;
+    color: rgb(20, 23, 24);
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    transition: all 0.4s ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      bottom: 1px;
+      background-color: rgb(20, 23, 24);
+      transform-origin: right;
+      transform: scale(0);
+      transition: transform 0.35s ease-in-out;
+    }
+
+    &:hover::before {
+      transform-origin: left;
+      transform: scale(1);
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.join {
+  height: 360px;
+  background-color: rgb(226, 228, 227);
+  background-image: url("./../img/join/01@2x.jpg");
+  background-position: 50% top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include desktop {
+    background-image: url("./../img/join/01.jpg");
+  }
+
+  &__container {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+
+    @include small-tablet {
+      padding: 95px 0;
+   }
+  }
+
+  &__content {
+    flex-grow: 1;
+    max-width: 488px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include small-tablet {
+      padding: 0 32px;
+   }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+
+
+   @include tablet {
+      width: 350px;
+      text-align: center;
+   }
+
+   @include small-tablet {
+    width: 312px;
+       font-size: 28px;
+   }
+  }
+
+  &__text {
+    color: rgb(18, 18, 18);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 32px;
+
+    @include small-tablet {
+      font-size: 14px;
+  }
+  }
+
+  &__form {
+    padding-bottom: 12px;
+    width: 100%;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid rgba(108, 114, 117, 0.5);
+
+  }
+
+  &__input {
+    // width: 100%;
+    flex-grow: 1;
+    background-color: rgb(226, 228, 227);
+    outline: none;
+
+    @include small-tablet {
+      width: 100%;
+   }
+  }
+
+  &::placeholder {
+    color: rgb(108, 114, 117);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    text-align: left;
+  }
+
+  &__btn {
+    color: rgb(108, 114, 117);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    text-align: left;
+  }
+}

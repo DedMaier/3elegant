@@ -1,0 +1,36 @@
+//шрифты
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700);
+
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+@import "burger";
+@import "btns";
+@import "nav-mobile-menu";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/header-nav";
+@import "./components/hero";
+@import "./components/arrivals";
+@import "./components/arrivals-card";
+@import "./components/arrivals-pagination";
+@import "./components/collection";
+@import "./components/best";
+@import "./components/promotion";
+@import "./components/free";
+@import "./components/timer";
+@import "./components/join";
+@import "./components/footer";
+
+
+
+// подключения компонентов страницы
+@import "./components/basket-section";
+@import "./components/card-section";
+
+

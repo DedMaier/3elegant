@@ -1,0 +1,107 @@
+.promotion {
+  width: 100%;
+  min-height: 532px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  // background: linear-gradient(rgb(255, 255, 255), rgba(255, 171, 0, 0.4));
+  background:  rgba(255, 171, 0, 0.4);
+
+  @include small-tablet {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  &__left {
+    background-image: url("../img/promotion/promo@2x.jpg");
+    background-position: 40% center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 532px;
+
+     @include mobile {
+      min-height: 376px;
+    }
+  }
+
+  &__right {
+    padding-top: 100px;
+    padding-left: 72px;
+
+    @include tablet {
+      padding-top: 80px;
+      padding-left: 40px;
+    }
+
+    @include small-tablet {
+      padding: 30px 0;
+      display: flex;
+      order: -1;
+    }
+  }
+
+  &__title {
+    color: rgb(55, 125, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  &__sale {
+    color: rgb(18, 18, 18);
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.4px;
+    text-align: left;
+    margin-bottom: 16px;
+
+    @include tablet {
+      font-size: 32px;
+    }
+  }
+
+  &__text {
+    color: rgb(18, 18, 18);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 24px;
+
+    @include tablet {
+      font-size: 16px;
+    }
+
+    @include small-tablet {
+      font-size: 14px;
+    }
+  }
+
+  &__expires {
+    color: rgb(20, 23, 24);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 12px;
+  }
+
+  &__timer {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    font-size: 14px;
+  }
+}
